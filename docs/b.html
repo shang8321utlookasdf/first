@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>详细示例</title>
+  </head>
+  <body>
+    <div id="time" style="font-size: 40px">准备回跳</div>
+    <script>
+      let a = 3;
+      const time = document.getElementById("time");
+      const b = setInterval(() => {
+        time.innerHTML = a--;
+        if (!a) {
+          clearInterval(b);
+          location.href = 'https://aliyun-hotfix-motor.cathay-ins.com.cn/new-order-detail'
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
